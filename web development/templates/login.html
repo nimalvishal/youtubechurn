@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo1.png') }}">
+        <title>Youtube Churn Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    </head>
+<body>
+    <section>
+        <div class="container">
+            <h2 class="title">
+                <span class="title-word title-word-1">YouTube</span>
+                <span class="title-word title-word-2">Churn</span>
+                <span class="title-word title-word-3">Prediction</span>
+            </h2>
+        </div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form method="post" action="{{ url_for('login') }}">
+                <div class="user-box">
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+                
+                <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                    Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
